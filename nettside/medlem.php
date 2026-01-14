@@ -15,7 +15,7 @@ if (!isset($_SESSION["logout"])) {
     <title>Medlemsområdet</title>
 </head>
 <body>
-    <div class="container">¨
+    <div class="container">
         <h1>Velkommen til medlemsområdet</h1>
         <p>Du har fullført testen og fått tillgang.</p>
         <p> Systemet lover en belønning på slutten. <strong>The cake is a lie.</strong></p>
