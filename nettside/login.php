@@ -41,8 +41,12 @@ if(isset($_POST["login"])) {
         <?php endif; ?>
 
         <form action="" method="post">
-            <input type="email" name="email" placeholer="E-post" required>
-            <input type="password" name="password" placeholer="Passord" required>
+            <label for="">E-post:</label><br>
+            <input type="email" name="email" placeholer="E-post" required><br><br>
+
+            <label for="">Passord:</label><br>
+            <input type="password" name="password" placeholer="Passord" required><br><br>
+            
             <button type="submit" name="login">Logg inn</button>
         </form>
     </div>
