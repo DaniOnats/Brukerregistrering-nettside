@@ -5,6 +5,10 @@ if (!isset($_SESSION["logout"])) {
     header("Location: index.php");
     exit();
 }
+
+if (isset($_SESSION["role"]) && $_SESSION["role"] == 1) {
+    echo '<a href="admin.php">Admin Panel</a>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="no">
@@ -29,6 +33,9 @@ if (!isset($_SESSION["logout"])) {
         <form action="logout.php" method="post">
             <button type="submit">Logg ut</button>
         </form>
+
+        <h3> Tror du at du har tilgang? <a href="admin.php">Admin panel</a></h3>
+
     </div>
 </body>
 </html>

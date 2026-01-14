@@ -7,8 +7,8 @@ if (!isset($_SESSION["logout"]) || $_SESSION["logout"] !== true) {
     exit();
 }
 
-if (!isset($_SESSION["role"]) || $_SESSION["role"] !== "admin") {
-    echo "<p> Du har ikke tilgang til denne siden.</p>";
+if (!isset($_SESSION["role"]) || $_SESSION["role"] != 1) {
+    echo "<p>Du har ikke tilgang til denne siden.</p>";
     exit();
 }
 
