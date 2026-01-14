@@ -43,5 +43,8 @@ $result = mysqli_query($conn, $sql);
             <?php } ?>
         </table>
     </div>
+
+    <h3><a href="medlem.php">Tilbake</a></h3>
+    
 </body>
 </html>
