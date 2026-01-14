@@ -16,6 +16,7 @@ if(isset($_POST["login"])) {
         if (!password_verify($password, $user["password"])) {
             $feil = "Feil passord";
         } else {
+            $_SESSION["role"] = $user["role"];
             $_SESSION["logout"] = true;
             $_SESSION["username"] = $user["username"];
 
