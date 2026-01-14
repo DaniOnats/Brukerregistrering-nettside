@@ -13,8 +13,8 @@ if(isset($_POST["login"])) {
     if (!$user) {
         $feil = "Feil e-post";
     } else {
-        if ($user && password_verify($password, $user["password"])) {
-            $feil = "Feil e-post eller passord";
+        if (!($password, $user["password"])) {
+            $feil = "Feil passord";
         } else {
             $_SESSION["logout"] = true;
             $_SESSION["username"] = $user["username"];
@@ -49,6 +49,9 @@ if(isset($_POST["login"])) {
 
             <button type="submit" name="login">Logg inn</button>
         </form>
+
+        <h3> Ikke medlem? <a href="login.php">Registrer her</a></h3>
+
     </div>
 </body>
 </html>
