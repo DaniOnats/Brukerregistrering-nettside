@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $sql);
             <th>Email</th>
             <th>Role</th>
         </tr>
-        <?php while ($row = mysqli_fetch_assoc($result)): { ?>
+        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
         <tr>
             <td><?php echo ($row['id']); ?></td>
             <td><?php echo ($row['username']); ?></td>
