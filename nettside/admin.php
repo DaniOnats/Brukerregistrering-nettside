@@ -20,25 +20,28 @@ $result = mysqli_query($conn, $sql);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Admin</title>
 </head>
 <body>
-    <h1>Admin Panel</h1>
-    <table border="1" cellpadding="6">
-        <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Role</th>
-        </tr>
-        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-        <tr>
-            <td><?php echo ($row['id']); ?></td>
-            <td><?php echo ($row['username']); ?></td>
-            <td><?php echo ($row['email']); ?></td>
-            <td><?php echo ($row['role']); ?></td>
-        </tr>
-        <?php } ?>
-    </table>
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <table border="1" cellpadding="6">
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+            <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+            <tr>
+                <td><?php echo ($row['id']); ?></td>
+                <td><?php echo ($row['username']); ?></td>
+                <td><?php echo ($row['email']); ?></td>
+                <td><?php echo ($row['role']); ?></td>
+            </tr>
+            <?php } ?>
+        </table>
+    </div>
 </body>
 </html>
