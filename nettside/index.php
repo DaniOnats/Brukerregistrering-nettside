@@ -1,10 +1,29 @@
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
+ini_set('error_log', __DIR__ . '/php_errors.log');
 error_reporting(E_ALL);
 
 include "db.php";
 
+if (isset($_POST["register"])) {
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO brukere (username, email, password)
+            VALUES ('$username', '$email', '$hash')";
+    
+    if (mysqli_query($conn, $sql)) {
+    header("Location: login.php");
+    exit();
+    } else {
+        echo "<p>Feil " . mysqli_error($conn) . "</p>";
+        
+    }
+}
 ?>
 
 
