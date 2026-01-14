@@ -1,1 +1,60 @@
+body {
+    font-family: monospace;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
 
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.111);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+}
+
+input[type="submit"], button {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: orangered;
+    transition-delay: 0.5s;
+}
+
+.feil {
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

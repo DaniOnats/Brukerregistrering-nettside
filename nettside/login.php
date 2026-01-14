@@ -26,7 +26,7 @@ if(isset($_POST["login"])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <title>Logg inn</title>
@@ -46,7 +46,7 @@ if(isset($_POST["login"])) {
 
             <label for="">Passord:</label><br>
             <input type="password" name="password" placeholer="Passord" required><br><br>
-            
+
             <button type="submit" name="login">Logg inn</button>
         </form>
     </div>
