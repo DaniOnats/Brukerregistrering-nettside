@@ -13,7 +13,7 @@ if (isset($_POST["register"])) {
 
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO brukere (username, email, password)
+    $sql = "INSERT INTO data (username, email, password)
             VALUES ('$username', '$email', '$hash')";
     
     if (mysqli_query($conn, $sql)) {
@@ -21,7 +21,7 @@ if (isset($_POST["register"])) {
     exit();
     } else {
         echo "<p>Feil " . mysqli_error($conn) . "</p>";
-        
+
     }
 }
 ?>
