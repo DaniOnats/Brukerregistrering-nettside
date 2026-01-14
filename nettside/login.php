@@ -13,7 +13,7 @@ if(isset($_POST["login"])) {
     if (!$user) {
         $feil = "Feil e-post";
     } else {
-        if (!($password, $user["password"])) {
+        if (!password_verify($password, $user["password"])) {
             $feil = "Feil passord";
         } else {
             $_SESSION["logout"] = true;
