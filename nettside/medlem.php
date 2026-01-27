@@ -18,14 +18,9 @@ if (!isset($_SESSION["logout"])) {
 <body>
     <div class="container">
         <h1>Velkommen til medlemsområdet</h1>
-        <p>Du har fullført testen og fått tillgang.</p>
-        <p> Systemet lover en belønning på slutten. <strong>The cake is a lie.</strong></p>
-
-        <p>
-            <em>Gåte:</em><br>
-            Hvis et system alltid lover belønning,
-            men aldri leverer hvem er det egentlig som blir testet?
-        </p>
+        <p>Gratulerer! Du har fullført testen og fått tillgang.</p>
+        <p>Nå kan du se på dette nydelige bildet.</p>
+        <img src="https://preview.redd.it/whos-the-best-sidemen-or-your-favourite-v0-pak3gv2tcoef1.jpeg?auto=webp&s=ee35d1a1b879ef6767a942211298690e7ae7c8c9" style="max-width:75%; height:auto;">
 
         <form action="logout.php" method="post">
             <button type="submit">Logg ut</button>
