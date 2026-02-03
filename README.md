@@ -22,5 +22,7 @@ Laget et behagelig og attraktivt design som er enkelt å bruke
 ### Ekstraoppgave
 Jeg opprettet en annen fil, admin.php, som vises som en lenke i Medlemsområde. Hvis du har tilgang, gjorde jeg dette ved å sette denne brukerens rolle til 1, mens alle andre er satt til 0.
 Når du går inn i Medlemsområde og Admin Panel, blir det sjekket om brukeren er administrator.
+
 <img src="https://github.com/DaniOnats/Brukerregistrering-nettside/blob/main/ReadmeImage/image.jpg" width="300" />
+
 
